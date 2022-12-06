@@ -36,10 +36,10 @@
                 <Button
                 x:Name="ReverseButton"
                 Background="Transparent"
-                Width="17" Height="17"
-                Click="ReverseButtonClick"
+                Width="17"
+                Click="ReverseButtonClick" Margin="0,2,0,0"
                 >
-                <Button.Content>
+                    <Button.Content>
                         <Image Source="C:\Users\311-19(student)\Desktop\TiresCompany-master\TiresCompany\Assets\Images\sortirovka"/>
                     </Button.Content>
                 </Button>
@@ -50,8 +50,8 @@
                       SelectionChanged="FilterComboBoxSelectionChanged" 
                       DisplayMemberPath="Title"
                       SelectedValuePath="ID"
-                      > 
-                
+                      >
+
             </ComboBox>
             <TextBlock Grid.Row="1" Grid.Column="2" x:Name="CountRowsTextBlock" HorizontalAlignment="Right" Text="Количество записей"/>
 
@@ -92,6 +92,6 @@
                 x:Name="AddProductButton" 
                 Content="Добавить товар"
                 Click="AddProductButtonClic"/>
-        
+
     </Grid>
 </Page>
